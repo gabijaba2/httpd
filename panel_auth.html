@@ -1,0 +1,95 @@
+<!-- Copyright (C) 2024 gabijaba -->
+<!DOCTYPE html>
+<html lang="lt-LT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <style>
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    div {
+        width: 600px;
+        background-color: pink;
+        margin: auto;
+        padding: 30px;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+  	border-radius: 4px;
+  	color: #3c4043;
+  	cursor: pointer;
+  	font-family: arial,sans-serif;
+  	font-size: 14px;
+  	height: 36px;
+  	line-height: 27px;
+  	min-width: 54px;
+  	padding: 0 16px;
+  	text-align: center;
+  	user-select: none;
+  	-webkit-user-select: none;
+  	touch-action: manipulation;
+  	white-space: pre;
+    }
+
+    .button:hover {
+  	border-color: #dadce0;
+  	box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  	color: #202124;
+    }
+
+    .button:focus {
+  	border-color: #4285f4;
+  	outline: none;
+    }
+    
+    input {
+    	display: block;
+	width: 100%
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ddd
+	border-radius: 5px;
+    }
+
+    label {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: left;
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Admin panel</h1>
+    <div>
+	<form action="" method="POST">
+	<label for="uname">Username:</label>
+	<input type="text" id="uname" name="uname" required>
+	</br>
+	<label for="password">Password:</label>
+	<input type="password" id="password" name="password" required>
+	</br>
+	<button class="button" type="submit">Submit</button>
+	</form>
+    </div>
+</body>
+
+</html>

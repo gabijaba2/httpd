@@ -1,0 +1,77 @@
+<!-- Copyright (C) 2024 gabijaba -->
+<!DOCTYPE html>
+<html lang="lt-LT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <style>
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    div {
+        width: 600px;
+        background-color: pink;
+        margin: auto;
+        padding: 30px;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+  	border-radius: 4px;
+  	color: #3c4043;
+  	cursor: pointer;
+  	font-family: arial,sans-serif;
+  	font-size: 14px;
+  	height: 36px;
+  	line-height: 27px;
+  	min-width: 54px;
+  	padding: 0 16px;
+  	text-align: center;
+  	user-select: none;
+  	-webkit-user-select: none;
+  	touch-action: manipulation;
+  	white-space: pre;
+    }
+
+    .button:hover {
+  	border-color: #dadce0;
+  	box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  	color: #202124;
+    }
+
+    .button:focus {
+  	border-color: #4285f4;
+  	outline: none;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Admin panel</h1>
+    <div>
+	<p>%lu, %s</p>
+	</br>
+
+	<p>Changes state of webpage</p>
+	<form action="/admin-secret/switch" method="post">
+		<button class="button" name="switch_button" value="switch_val">Toggle state</button>
+	</form>
+ 
+	</br>
+	<p>Shuts the server down</p> 
+	<form action="/admin-secret/shutdown" method="post">
+		<button class="button" name="shutdown" value="true">Shutdown</button>
+	</form>
+    </div>
+</body>
+
+</html>

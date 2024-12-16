@@ -1,0 +1,17 @@
+/* Copyright (C) 2024 gabijaba */
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div {
+    width: 600px;
+    background-color: #99ff99;
+    margin: auto;
+    padding: 30px;
+}
+
+h2 {
+    margin-top: 0px;
+}
